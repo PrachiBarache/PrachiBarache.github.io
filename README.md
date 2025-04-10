@@ -55,9 +55,6 @@ The portfolio is hosted on GitHub Pages and can be accessed at: [https://prachib
 
 To update the website content, modify the corresponding YAML files in the `_data` directory. For example, to add a new project, add an entry to `_data/projects.yml`.
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
