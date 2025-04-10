@@ -6,36 +6,96 @@
     <title>Prachi Barache - Data Science Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add AOS library for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Add Particles.js for interactive background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <header>
+    <!-- Particles.js background container -->
+    <div id="particles-js" class="particles-container"></div>
+    
+    <!-- Fixed navbar that changes on scroll -->
+    <nav class="navbar">
         <div class="container">
-            <h1>Prachi Barache</h1>
-            <p>Data Scientist | Machine Learning Specialist | Researcher</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="logo">
+                <a href="#home">PB</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#experience" class="nav-item">Experience</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#education" class="nav-item">Education</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section with animated text -->
+    <header id="home">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="typing-effect">Prachi Barache</h1>
+                <div class="profession-container">
+                    <p>I'm a <span class="profession-slider">
+                        <span>Data Scientist</span>
+                        <span>Machine Learning Specialist</span>
+                        <span>Researcher</span>
+                    </span></p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <p>Scroll Down</p>
+            </a>
         </div>
     </header>
 
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-right" data-aos-delay="200">
                     <p>Data Science graduate with expertise in neural network optimization and computational efficiency. Skilled in designing experiments across diverse datasets and scaling them through high-performance computing.</p>
                     <p>I combine technical innovation with practical problem-solving to create machine learning solutions that balance performance with resource constraints. Passionate about making AI more accessible through efficient implementations.</p>
+                    
+                    <div class="key-stats">
+                        <div class="stat-item">
+                            <div class="stat-number"><span class="counter" data-target="34">0</span>+</div>
+                            <div class="stat-label">Datasets Analyzed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number"><span class="counter" data-target="17000">0</span>+</div>
+                            <div class="stat-label">Experiment Configs</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number"><span class="counter" data-target="75">0</span>%</div>
+                            <div class="stat-label">Computation Reduction</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-image">
-                    <!-- Add your image here -->
-                    <img src="https://via.placeholder.com/300" alt="Prachi Barache">
+                <div class="about-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/300" alt="Prachi Barache">
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,243 +103,971 @@
 
     <section id="experience">
         <div class="container">
-            <h2>Work Experience</h2>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Research Intern</h3>
-                    <p class="company">City University of London - Centre for Adaptive Computing Systems and Machine Learning</p>
-                    <p class="duration">August 2024 - January 2025</p>
-                </div>
-                <ul class="experience-description">
-                    <li>Developed a novel regularization method (SLoss) for neural networks that achieved comparable performance to existing methods while reducing computational costs by up to 75%.</li>
-                    <li>Designed and executed extensive experiments across 34 datasets to evaluate model performance, processing over 17,000 experiment configurations.</li>
-                    <li>Implemented high-performance computing workflows using SLURM to parallelize model training, reducing total computation time from 34 days to 12 hours.</li>
-                    <li>Engineered data processing pipelines for feature extraction and standardization across diverse dataset types.</li>
-                    <li>Collaborated with PhD researchers to integrate new methods into existing machine learning frameworks.</li>
-                </ul>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Work Experience</h2>
+                <div class="underline"></div>
             </div>
             
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Automation Test Engineer</h3>
-                    <p class="company">Infosys LTD, India</p>
-                    <p class="duration">March 2022 - July 2023</p>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>August 2024 - January 2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Research Intern</h3>
+                        <p class="company">City University of London - Centre for Adaptive Computing Systems and Machine Learning</p>
+                        
+                        <div class="expandable-content">
+                            <div class="experience-summary">
+                                <ul class="experience-description">
+                                    <li>Developed a novel regularization method (SLoss) for neural networks that achieved comparable performance to existing methods while reducing computational costs by up to 75%.</li>
+                                    <li>Designed and executed extensive experiments across 34 datasets to evaluate model performance, processing over 17,000 experiment configurations.</li>
+                                </ul>
+                                <button class="read-more">Read More</button>
+                            </div>
+                            <div class="experience-details">
+                                <ul class="experience-description">
+                                    <li>Implemented high-performance computing workflows using SLURM to parallelize model training, reducing total computation time from 34 days to 12 hours.</li>
+                                    <li>Engineered data processing pipelines for feature extraction and standardization across diverse dataset types.</li>
+                                    <li>Collaborated with PhD researchers to integrate new methods into existing machine learning frameworks.</li>
+                                </ul>
+                                <button class="read-less">Read Less</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul class="experience-description">
-                    <li>Created and implemented a robust automation framework using Selenium with Java, Cucumber, and Spring Boot, which improved testing efficiency by 40%, achieved 80% test coverage.</li>
-                    <li>Contributed to end-to-end testing initiatives including regression testing and functional testing, while supporting UAT and deployment within an Agile methodology.</li>
-                    <li>Maintained comprehensive documentation in Word and Confluence, including Process Design Instructions (PDI), ensuring up-to-date specifications for automation processes.</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Freelancer & Digital Marketing Intern</h3>
-                    <p class="company">Proctur and freelancing, India</p>
-                    <p class="duration">January 2021 - March 2022</p>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>March 2022 - July 2023</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Automation Test Engineer</h3>
+                        <p class="company">Infosys LTD, India</p>
+                        
+                        <div class="expandable-content">
+                            <div class="experience-summary">
+                                <ul class="experience-description">
+                                    <li>Created and implemented a robust automation framework using Selenium with Java, Cucumber, and Spring Boot, which improved testing efficiency by 40%, achieved 80% test coverage.</li>
+                                </ul>
+                                <button class="read-more">Read More</button>
+                            </div>
+                            <div class="experience-details">
+                                <ul class="experience-description">
+                                    <li>Contributed to end-to-end testing initiatives including regression testing and functional testing, while supporting UAT and deployment within an Agile methodology.</li>
+                                    <li>Maintained comprehensive documentation in Word and Confluence, including Process Design Instructions (PDI), ensuring up-to-date specifications for automation processes.</li>
+                                </ul>
+                                <button class="read-less">Read Less</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul class="experience-description">
-                    <li>Created data-driven reports for stakeholders, translating complex metrics into clear business recommendations.</li>
-                    <li>Managed client relationships and communicated complex technical solutions to non-technical stakeholders, resulting in 20% higher client satisfaction.</li>
-                    <li>Analyzed marketing campaign metrics from Facebook to make data-driven decisions on target audiences.</li>
-                </ul>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">
+                        <span>January 2021 - March 2022</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Freelancer & Digital Marketing Intern</h3>
+                        <p class="company">Proctur and freelancing, India</p>
+                        
+                        <div class="expandable-content">
+                            <div class="experience-summary">
+                                <ul class="experience-description">
+                                    <li>Created data-driven reports for stakeholders, translating complex metrics into clear business recommendations.</li>
+                                </ul>
+                                <button class="read-more">Read More</button>
+                            </div>
+                            <div class="experience-details">
+                                <ul class="experience-description">
+                                    <li>Managed client relationships and communicated complex technical solutions to non-technical stakeholders, resulting in 20% higher client satisfaction.</li>
+                                    <li>Analyzed marketing campaign metrics from Facebook to make data-driven decisions on target audiences.</li>
+                                </ul>
+                                <button class="read-less">Read Less</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Projects</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="deep-learning">Deep Learning</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+            </div>
+            
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/350x200" alt="Financial Sentiment Analysis">
-                    <h3>Financial Sentiment Analysis</h3>
-                    <p>Developed a financial sentiment analysis system comparing transformer-based models (BERT, RoBERTa) with traditional machine learning approaches (SVM, RNN) to classify financial news, achieving 95% accuracy with RoBERTa.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Details</a>
+                <div class="project-card" data-category="nlp machine-learning" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/350x200" alt="Financial Sentiment Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>NLP</span>
+                            <span>BERT</span>
+                            <span>Sentiment Analysis</span>
+                        </div>
+                        <h3>Financial Sentiment Analysis</h3>
+                        <p>Developed a financial sentiment analysis system comparing transformer-based models (BERT, RoBERTa) with traditional machine learning approaches (SVM, RNN) to classify financial news, achieving 95% accuracy with RoBERTa.</p>
                     </div>
                 </div>
                 
                 <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/350x200" alt="Wine Quality Prediction">
-                    <h3>Wine Quality Prediction</h3>
-                    <p>Implemented and compared SVM and MLP models on highly imbalanced dataset (88:12 ratio), achieving 85.49% accuracy. Addressed class imbalance using SMOTE and undersampling techniques.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Details</a>
+                <div class="project-card" data-category="machine-learning data-analysis" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/350x200" alt="Wine Quality Prediction">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>SVM</span>
+                            <span>MLP</span>
+                            <span>SMOTE</span>
+                        </div>
+                        <h3>Wine Quality Prediction</h3>
+                        <p>Implemented and compared SVM and MLP models on highly imbalanced dataset (88:12 ratio), achieving 85.49% accuracy. Addressed class imbalance using SMOTE and undersampling techniques.</p>
                     </div>
                 </div>
                 
                 <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/350x200" alt="Optimal Navigation in Zoo Environment">
-                    <h3>Optimal Navigation in Zoo Environment</h3>
-                    <p>Developed an advanced Deep Reinforcement Learning project creating an intelligent agent for optimal navigation in a complex zoo environment, implementing multiple RL algorithms including Q-Learning, SARSA, DQN, and PPO.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Details</a>
+                <div class="project-card" data-category="deep-learning" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/350x200" alt="Optimal Navigation in Zoo Environment">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Reinforcement Learning</span>
+                            <span>DQN</span>
+                            <span>PPO</span>
+                        </div>
+                        <h3>Optimal Navigation in Zoo Environment</h3>
+                        <p>Developed an advanced Deep Reinforcement Learning project creating an intelligent agent for optimal navigation in a complex zoo environment, implementing multiple RL algorithms including Q-Learning, SARSA, DQN, and PPO.</p>
                     </div>
                 </div>
                 
                 <!-- Project 4 -->
-                <div class="project-card">
-                    <img src="https://via.placeholder.com/350x200" alt="RAG System">
-                    <h3>Retrieval-Augmented Generation (RAG) System</h3>
-                    <p>Built efficient document processing pipeline with error handling and retries. Implemented performance metrics tracking for embedding, retrieval, and generation phases.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Details</a>
+                <div class="project-card" data-category="nlp deep-learning" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/350x200" alt="RAG System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>NLP</span>
+                            <span>LLM</span>
+                            <span>Embeddings</span>
+                        </div>
+                        <h3>Retrieval-Augmented Generation (RAG) System</h3>
+                        <p>Built efficient document processing pipeline with error handling and retries. Implemented performance metrics tracking for embedding, retrieval, and generation phases.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section id="education">
         <div class="container">
-            <h2>Education</h2>
-            
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>MSc Data Science with Merit</h3>
-                    <p class="institution">City, University of London, UK</p>
-                    <p class="duration">September 2023 - February 2025</p>
-                </div>
-                <p class="education-description">
-                    Key modules: Machine Learning, Neural Computing, Deep RL, Visual Analytics, NLP, Big Data
-                </p>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Education</h2>
+                <div class="underline"></div>
             </div>
             
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>B.Tech. Electronics and Telecommunication</h3>
-                    <p class="institution">MIT Academy of Engineering, India</p>
-                    <p class="duration">June 2015 - July 2020</p>
+            <div class="education-timeline">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-year">
+                        <span>2023-2025</span>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>MSc Data Science with Merit</h3>
+                        <p class="institution">City, University of London, UK</p>
+                        <p class="duration">September 2023 - February 2025</p>
+                        <div class="education-details">
+                            <div class="tab-container">
+                                <div class="tab-headers">
+                                    <div class="tab-header active" data-tab="modules-msc">Key Modules</div>
+                                    <div class="tab-header" data-tab="projects-msc">Projects</div>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="modules-msc">
+                                        <ul>
+                                            <li>Machine Learning</li>
+                                            <li>Neural Computing</li>
+                                            <li>Deep Reinforcement Learning</li>
+                                            <li>Visual Analytics</li>
+                                            <li>Natural Language Processing</li>
+                                            <li>Big Data</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane" id="projects-msc">
+                                        <p>Research dissertation on neural network regularization methods, reducing computational costs by 75% while maintaining performance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="education-description">
-                    CGPA: 6.78/10<br>
-                    Key modules: Machine Learning, Product Design, Entrepreneurship, IOT
-                </p>
+                
+                <div class="education-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="education-year">
+                        <span>2015-2020</span>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>B.Tech. Electronics and Telecommunication</h3>
+                        <p class="institution">MIT Academy of Engineering, India</p>
+                        <p class="duration">June 2015 - July 2020</p>
+                        <div class="education-details">
+                            <div class="tab-container">
+                                <div class="tab-headers">
+                                    <div class="tab-header active" data-tab="modules-btech">Key Modules</div>
+                                    <div class="tab-header" data-tab="grades-btech">Grades</div>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="modules-btech">
+                                        <ul>
+                                            <li>Machine Learning</li>
+                                            <li>Product Design</li>
+                                            <li>Entrepreneurship</li>
+                                            <li>IOT</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane" id="grades-btech">
+                                        <p>CGPA: 6.78/10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <div class="skills-group">
-                        <div class="skill">Python (Advanced)</div>
-                        <div class="skill">SQL</div>
-                        <div class="skill">Java</div>
-                        <div class="skill">Data Structures</div>
-                        <div class="skill">Algorithms</div>
-                    </div>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Skills</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="skills-tabs">
+                <div class="tabs-nav" data-aos="fade-up" data-aos-delay="100">
+                    <button class="tab-btn active" data-tab="programming">Programming</button>
+                    <button class="tab-btn" data-tab="machine-learning">Machine Learning</button>
+                    <button class="tab-btn" data-tab="data-analysis">Data Analysis</button>
+                    <button class="tab-btn" data-tab="llm">Large Language Models</button>
+                    <button class="tab-btn" data-tab="tools">Development Tools</button>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>Machine Learning</h3>
-                    <div class="skills-group">
-                        <div class="skill">PyTorch</div>
-                        <div class="skill">TensorFlow</div>
-                        <div class="skill">Scikit-learn</div>
-                        <div class="skill">Deep Reinforcement Learning</div>
-                        <div class="skill">NLP</div>
-                        <div class="skill">Neural Networks</div>
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="programming" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skills-group">
+                            <div class="skill-item">
+                                <div class="skill-name">Python</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="95%"></div>
+                                </div>
+                                <div class="skill-percent">95%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">SQL</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90%"></div>
+                                </div>
+                                <div class="skill-percent">90%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Java</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="75%"></div>
+                                </div>
+                                <div class="skill-percent">75%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Data Structures</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85%"></div>
+                                </div>
+                                <div class="skill-percent">85%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Algorithms</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80%"></div>
+                                </div>
+                                <div class="skill-percent">80%</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Data Analysis</h3>
-                    <div class="skills-group">
-                        <div class="skill">Numpy</div>
-                        <div class="skill">Pandas</div>
-                        <div class="skill">Data Preprocessing</div>
-                        <div class="skill">Feature Engineering</div>
-                        <div class="skill">EDA</div>
-                        <div class="skill">Statistical Analysis</div>
+                    
+                    <div class="tab-pane" id="machine-learning" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skills-group">
+                            <div class="skill-item">
+                                <div class="skill-name">PyTorch</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90%"></div>
+                                </div>
+                                <div class="skill-percent">90%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">TensorFlow</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85%"></div>
+                                </div>
+                                <div class="skill-percent">85%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Scikit-learn</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="95%"></div>
+                                </div>
+                                <div class="skill-percent">95%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Deep RL</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80%"></div>
+                                </div>
+                                <div class="skill-percent">80%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Neural Networks</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90%"></div>
+                                </div>
+                                <div class="skill-percent">90%</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Large Language Models</h3>
-                    <div class="skills-group">
-                        <div class="skill">BERT</div>
-                        <div class="skill">RoBERTa</div>
-                        <div class="skill">TinyLlama</div>
-                        <div class="skill">Prompt Engineering</div>
-                        <div class="skill">Fine-tuning Techniques</div>
+                    
+                    <div class="tab-pane" id="data-analysis" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skills-group">
+                            <div class="skill-item">
+                                <div class="skill-name">Numpy</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="95%"></div>
+                                </div>
+                                <div class="skill-percent">95%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Pandas</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="95%"></div>
+                                </div>
+                                <div class="skill-percent">95%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Data Preprocessing</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90%"></div>
+                                </div>
+                                <div class="skill-percent">90%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Feature Engineering</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85%"></div>
+                                </div>
+                                <div class="skill-percent">85%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">EDA</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90%"></div>
+                                </div>
+                                <div class="skill-percent">90%</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Development Tools & Cloud</h3>
-                    <div class="skills-group">
-                        <div class="skill">Git</div>
-                        <div class="skill">SLURM</div>
-                        <div class="skill">HPC</div>
-                        <div class="skill">Test-Driven Development</div>
-                        <div class="skill">Google Cloud</div>
-                        <div class="skill">PySpark</div>
+                    
+                    <div class="tab-pane" id="llm" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skills-group">
+                            <div class="skill-item">
+                                <div class="skill-name">BERT</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85%"></div>
+                                </div>
+                                <div class="skill-percent">85%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">RoBERTa</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80%"></div>
+                                </div>
+                                <div class="skill-percent">80%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">TinyLlama</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="75%"></div>
+                                </div>
+                                <div class="skill-percent">75%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Prompt Engineering</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90%"></div>
+                                </div>
+                                <div class="skill-percent">90%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Fine-tuning</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85%"></div>
+                                </div>
+                                <div class="skill-percent">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="tools" data-aos="fade-up" data-aos-delay="150">
+                        <div class="skills-group">
+                            <div class="skill-item">
+                                <div class="skill-name">Git</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90%"></div>
+                                </div>
+                                <div class="skill-percent">90%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">SLURM</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85%"></div>
+                                </div>
+                                <div class="skill-percent">85%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">HPC</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80%"></div>
+                                </div>
+                                <div class="skill-percent">80%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">TDD</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="75%"></div>
+                                </div>
+                                <div class="skill-percent">75%</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name">Google Cloud</div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="70%"></div>
+                                </div>
+                                <div class="skill-percent">70%</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section id="leadership">
         <div class="container">
-            <h2>Leadership & Community Involvement</h2>
-            
-            <div class="leadership-item">
-                <h3>Student Trustee & Ambassador</h3>
-                <p class="organization">City University of London</p>
-                <p class="duration">December 2023 - December 2024</p>
-                <p class="description">Represented student interests in governance meetings and served as university representative at events.</p>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Leadership & Community</h2>
+                <div class="underline"></div>
             </div>
             
-            <div class="leadership-item">
-                <h3>U25 Campus Ambassador</h3>
-                <p class="organization">U25 [India's Biggest Youth Community]</p>
-                <p class="duration">June 2019 - June 2020</p>
-                <p class="description">Established U25 club on campus and organized successful U25 Summit (500 footprint) from conceptualization to execution and secured approvals from administration.</p>
-            </div>
-            
-            <div class="leadership-item">
-                <h3>Core Team Member</h3>
-                <p class="organization">Sarathi Women Empowerment Program</p>
-                <p class="duration">May 2019 - July 2019</p>
-                <p class="description">Led skill development initiative for 45 rural women, managing a 6-person team and securing TATA Technologies funding of Rs.35000 and coordinated exhibition logistics.</p>
+            <div class="leadership-cards">
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leadership-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Student Trustee & Ambassador</h3>
+                    <p class="organization">City University of London</p>
+                    <p class="duration">December 2023 - December 2024</p>
+                    <p class="description">Represented student interests in governance meetings and served as university representative at events.</p>
+                </div>
+                
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="leadership-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>U25 Campus Ambassador</h3>
+                    <p class="organization">U25 [India's Biggest Youth Community]</p>
+                    <p class="duration">June 2019 - June 2020</p>
+                    <p class="description">Established U25 club on campus and organized successful U25 Summit (500 footprint) from conceptualization to execution and secured approvals from administration.</p>
+                </div>
+                
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leadership-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Core Team Member</h3>
+                    <p class="organization">Sarathi Women Empowerment Program</p>
+                    <p class="duration">May 2019 - July 2019</p>
+                    <p class="description">Led skill development initiative for 45 rural women, managing a 6-person team and securing TATA Technologies funding of Rs.35000 and coordinated exhibition logistics.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="bg-gradient">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me for collaborations, research opportunities, or just a chat!</p>
-            <div class="contact-info">
-                <a href="mailto:psbarache@gmail.com"><i class="fas fa-envelope"></i> psbarache@gmail.com</a>
-                <a href="tel:+447393063590"><i class="fas fa-phone"></i> +44 7393063590</a>
-                <a href="https://github.com/PrachiBarache" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/psbarache" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> London, UK</p>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Get in Touch</h3>
+                    <p>Feel free to reach out to me for collaborations, research opportunities, or just a chat!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:psbarache@gmail.com">psbarache@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+447393063590">+44 7393063590</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>London, UK</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/PrachiBarache" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/psbarache" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Prachi Barache. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Prachi Barache</h3>
+                    <p>Data Scientist | Machine Learning Specialist | Researcher</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Prachi Barache. All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Back to top button -->
+    <div id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS animation
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            // Navigation toggle for mobile
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (navToggle) {
+                navToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                });
+            }
+            
+            // Navbar scroll behavior
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Initialize particles.js
+            particlesJS('particles-js', {
+                particles: {
+                    number: {
+                        value: 80,
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: '#4a6fdc'
+                    },
+                    shape: {
+                        type: 'circle',
+                        stroke: {
+                            width: 0,
+                            color: '#000000'
+                        }
+                    },
+                    opacity: {
+                        value: 0.5,
+                        random: false,
+                        anim: {
+                            enable: false
+                        }
+                    },
+                    size: {
+                        value: 3,
+                        random: true,
+                        anim: {
+                            enable: false
+                        }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: '#4a6fdc',
+                        opacity: 0.4,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: 'none',
+                        random: false,
+                        straight: false,
+                        out_mode: 'out',
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: 'grab'
+                        },
+                        onclick: {
+                            enable: true,
+                            mode: 'push'
+                        },
+                        resize: true
+                    },
+                    modes: {
+                        grab: {
+                            distance: 140,
+                            line_linked: {
+                                opacity: 1
+                            }
+                        },
+                        push: {
+                            particles_nb: 4
+                        }
+                    }
+                },
+                retina_detect: true
+            });
+            
+            // Counter animation for stats
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+            
+            const startCounters = () => {
+                counters.forEach(counter => {
+                    const target = +counter.dataset.target;
+                    let count = 0;
+                    const inc = target / speed;
+                    
+                    const updateCount = () => {
+                        if (count < target) {
+                            count += inc;
+                            counter.innerText = Math.floor(count);
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    
+                    updateCount();
+                });
+            };
+            
+            // Start counters when about section comes into view
+            const aboutSection = document.getElementById('about');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            if (aboutSection) {
+                observer.observe(aboutSection);
+            }
+            
+            // Projects filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    const filter = btn.dataset.filter;
+                    
+                    projectCards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            if (card.dataset.category.includes(filter)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+            
+            // Expandable content in experience section
+            const readMoreBtns = document.querySelectorAll('.read-more');
+            const readLessBtns = document.querySelectorAll('.read-less');
+            
+            readMoreBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const parent = this.closest('.expandable-content');
+                    parent.classList.add('expanded');
+                });
+            });
+            
+            readLessBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const parent = this.closest('.expandable-content');
+                    parent.classList.remove('expanded');
+                });
+            });
+            
+            // Tabs functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.dataset.tab;
+                    
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(btn => btn.classList.remove('active'));
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding pane
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Education tabs
+            const tabHeaders = document.querySelectorAll('.tab-header');
+            
+            tabHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const tabContainer = this.closest('.tab-container');
+                    const tabId = this.dataset.tab;
+                    
+                    // Remove active class from all headers and panes in this container
+                    tabContainer.querySelectorAll('.tab-header').forEach(h => h.classList.remove('active'));
+                    tabContainer.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked header and corresponding pane
+                    this.classList.add('active');
+                    tabContainer.querySelector(`#${tabId}`).classList.add('active');
+                });
+            });
+            
+            // Back to top button
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // You would typically send the form data to a server here
+                    // For now, just show a success message
+                    this.innerHTML = '<div class="form-success"><i class="fas fa-check-circle"></i><h3>Thank you!</h3><p>Your message has been sent successfully. I\'ll get back to you soon.</p></div>';
+                });
+            }
+            
+            // Initialize skill bars animation
+            const skillBars = document.querySelectorAll('.skill-level');
+            
+            const animateSkillBars = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const level = entry.target.dataset.level;
+                        entry.target.style.width = level;
+                        skillObserver.unobserve(entry.target);
+                    }
+                });
+            };
+            
+            const skillObserver = new IntersectionObserver(animateSkillBars, { threshold: 0.1 });
+            
+            skillBars.forEach(bar => {
+                skillObserver.observe(bar);
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 70, // Adjust for fixed header
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                            navToggle.classList.remove('active');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
