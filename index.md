@@ -9,6 +9,11 @@ Data Science professional with expertise in analyzing large datasets to extract 
 
 Passionate about using statistical techniques and advanced analytics to deliver real results in rapidly evolving business environments. Specializes in neural network optimization and computational efficiency, with a focus on making AI more accessible through efficient implementation.
 
+## Main Skills
+
+**Python | Machine Learning | Neural Networks | Data Analysis | NLP | Deep Reinforcement Learning | HPC**
+
+
 ## Experience
 
 {% for job in site.data.experience %}
