@@ -4,9 +4,7 @@
 title: Prachi Barache
 description: >-
   Python | Machine Learning | Neural Networks | Data Analysis | NLP | Deep Reinforcement Learning | HPC
-
-- [GitHub](https://github.com/{{ site.social.github }}) |[LinkedIn](https://linkedin.com/in/{{ site.social.linkedin }})
-
+  - [GitHub](https://github.com/prachi-barache) | [LinkedIn](https://linkedin.com/in/prachi-barache)
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
