@@ -4,6 +4,14 @@
 title: Prachi Barache
 description: >-
   Python | Machine Learning | Neural Networks | Data Analysis | NLP | Deep Reinforcement Learning | HPC
+    <div class="social-buttons">
+    <a href="https://github.com/{{ site.social.github }}" class="social-button github">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://linkedin.com/in/{{ site.social.linkedin }}" class="social-button linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    </div>
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site

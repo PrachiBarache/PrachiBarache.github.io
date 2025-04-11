@@ -1,19 +1,9 @@
 ---
 layout: default
 title: Prachi Barache | Data Science Portfolio
-    <div class="social-buttons">
-    <a href="https://github.com/{{ site.social.github }}" class="social-button github">
-        <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="https://linkedin.com/in/{{ site.social.linkedin }}" class="social-button linkedin">
-        <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    </div>
 ---
 
 # Hello, I'm Prachi 👋
-
-
 
 I'm a Data Science professional passionate about turning complex data into meaningful insights. With a background in neural network optimization and computational efficiency, I love tackling challenging problems and making AI more accessible.
 
