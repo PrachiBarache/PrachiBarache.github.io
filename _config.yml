@@ -3,8 +3,6 @@
 # Site settings
 title: Prachi Barache | Data Science Portfolio
 description: >-
-  
-
   Python | Machine Learning | Neural Networks | Data Analysis | NLP | Deep Reinforcement Learning | HPC
 
 baseurl: "" # the subpath of your site, e.g. /blog
