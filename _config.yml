@@ -20,7 +20,7 @@ author:
   email: psbarache@gmail.com
   phone: "+44 7393063590"
   location: London, UK
-  
+
 # Social media
 social:
   github: PrachiBarache
@@ -33,3 +33,7 @@ colors:
   light: "#f8fafc"
   dark: "#1e293b"
   accent: "#7c3aed"
+
+# Additional scripts
+head_scripts:
+  - https://kit.fontawesome.com/6b3f976798.js

@@ -3,14 +3,27 @@ layout: default
 title: Prachi Barache | Data Science Portfolio
 ---
 
-# About Me
+# Hello, I'm Prachi 👋
 
-Data Science professional with expertise in analyzing large datasets to extract actionable insights for business decision-making. Skilled in identifying patterns, visualizing complex data, and communicating findings to stakeholders. Experience developing data-driven solutions that translate complex problems into significant actions.
+I'm a Data Science professional passionate about turning complex data into meaningful insights. With a background in neural network optimization and computational efficiency, I love tackling challenging problems and making AI more accessible.
 
-Passionate about using statistical techniques and advanced analytics to deliver real results in rapidly evolving business environments. Specializes in neural network optimization and computational efficiency, with a focus on making AI more accessible through efficient implementation.
+When I'm not coding or analyzing data, you'll find me organizing community events, mentoring aspiring data scientists, and exploring new technologies. I believe in the power of data to drive positive change and enjoy collaborating with others to make that happen.
 
+## Core Competencies
 
-## Experience
+<div class="skills-highlight">
+  <span class="skill-tag">Python</span>
+  <span class="skill-tag">Machine Learning</span>
+  <span class="skill-tag">Neural Networks</span>
+  <span class="skill-tag">Data Analysis</span>
+  <span class="skill-tag">NLP</span>
+  <span class="skill-tag">Deep RL</span>
+  <span class="skill-tag">PyTorch</span>
+  <span class="skill-tag">TensorFlow</span>
+  <span class="skill-tag">HPC</span>
+</div>
+
+## My Journey
 
 {% for job in site.data.experience %}
 ### {{ job.position }} | {{ job.company }}
@@ -24,26 +37,25 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 
 {% endfor %}
 
-<!-- ## Featured Projects
+## Projects I'm Proud Of
 
 {% assign featured_projects = site.data.projects | where: "featured", true %}
 {% for project in featured_projects %}
-### {{ project.title }}
-{{ project.description }}
+<div class="project-card">
+  <h3>{{ project.title }}</h3>
+  <p>{{ project.description }}</p>
 
-**Technologies:** {{ project.tech | join: ", " }}
-
-{% endfor %} -->
-
-## Skills
-
-{% for skill_category in site.data.skills %}
-### {{ skill_category.category }}
-{% for skill in skill_category.items %}
-- {{ skill }}
+  <div class="project-tech">
+    {% for tech in project.tech %}
+    <span class="tech-tag">{{ tech }}</span>
+    {% endfor %}
+  </div>
+  
+  {% if project.github_link != "" %}
+  <a href="{{ project.github_link }}" class="project-link">View on GitHub</a>
+  {% endif %}
+</div>
 {% endfor %}
-{% endfor %}
-
 
 ## All Projects
 
@@ -59,20 +71,34 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 
 {% endfor %}
 
-## Extracurricular Activities
+## Skills
+
+{% for skill_category in site.data.skills %}
+### {{ skill_category.category }}
+{% for skill in skill_category.items %}
+- {{ skill }}
+{% endfor %}
+{% endfor %}
+
+## What I Do Outside Work
 
 {% for activity in site.data.extracurricular %}
-### {{ activity.title }} - {{ activity.role }}
-*{{ activity.period }}*
-
-{{ activity.description }}
-
-{% for item in activity.highlights %}
-- {{ item }}
+<div class="activity-card">
+  <h3>{{ activity.title }}</h3>
+  <h4>{{ activity.role }}</h4>
+  <span class="activity-period">{{ activity.period }}</span>
+  
+  <p>{{ activity.description }}</p>
+  
+  <div class="activity-highlights">
+    {% for item in activity.highlights %}
+    <span class="activity-highlight">{{ item }}</span>
+    {% endfor %}
+  </div>
+</div>
 {% endfor %}
-{% endfor %}
 
-## Contact
+## Let's Connect!
 
 - Email: {{ site.author.email }}
 - Phone: {{ site.author.phone }}
