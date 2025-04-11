@@ -11,7 +11,6 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 
 ## Main Skills
 
-**Python | Machine Learning | Neural Networks | Data Analysis | NLP | Deep Reinforcement Learning | HPC**
 
 
 ## Experience
