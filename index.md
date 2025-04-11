@@ -71,7 +71,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 
 {% endfor %}
 
-## Skills
+<!-- ## Skills
 
 {% for skill_category in site.data.skills %}
 ### {{ skill_category.category }}
@@ -95,7 +95,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
     {% endfor %}
   </div>
 </div>
-{% endfor %}
+{% endfor %} -->
 
 ## Let's Connect!
 
