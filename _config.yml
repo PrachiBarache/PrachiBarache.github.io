@@ -1,8 +1,10 @@
 # Main configuration file for GitHub Pages portfolio
 
 # Site settings
-title: Prachi Barache | Data Science Portfolio
+title: Prachi Barache
 description: >-
+- [GitHub](https://github.com/{{ site.social.github }}) |[LinkedIn](https://linkedin.com/in/{{ site.social.linkedin }})
+
   Python | Machine Learning | Neural Networks | Data Analysis | NLP | Deep Reinforcement Learning | HPC
 
 baseurl: "" # the subpath of your site, e.g. /blog

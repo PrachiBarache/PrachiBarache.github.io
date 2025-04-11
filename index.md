@@ -101,5 +101,3 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 
 - Email: {{ site.author.email }}
 - Location: {{ site.author.location }}
-- [GitHub](https://github.com/{{ site.social.github }})
-- [LinkedIn](https://linkedin.com/in/{{ site.social.linkedin }})
