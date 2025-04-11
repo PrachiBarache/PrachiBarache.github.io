@@ -23,7 +23,7 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 
 {% endfor %}
 
-## Featured Projects
+<!-- ## Featured Projects
 
 {% assign featured_projects = site.data.projects | where: "featured", true %}
 {% for project in featured_projects %}
@@ -32,7 +32,7 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 
 **Technologies:** {{ project.tech | join: ", " }}
 
-{% endfor %}
+{% endfor %} -->
 
 ## All Projects
 
