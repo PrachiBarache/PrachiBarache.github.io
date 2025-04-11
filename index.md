@@ -9,19 +9,6 @@ Data Science professional with expertise in analyzing large datasets to extract 
 
 Passionate about using statistical techniques and advanced analytics to deliver real results in rapidly evolving business environments. Specializes in neural network optimization and computational efficiency, with a focus on making AI more accessible through efficient implementation.
 
-## Core Competencies
-
-<div class="skills-highlight">
-  <span class="skill-tag">Python</span>
-  <span class="skill-tag">Machine Learning</span>
-  <span class="skill-tag">Neural Networks</span>
-  <span class="skill-tag">Data Analysis</span>
-  <span class="skill-tag">NLP</span>
-  <span class="skill-tag">Deep RL</span>
-  <span class="skill-tag">PyTorch</span>
-  <span class="skill-tag">TensorFlow</span>
-  <span class="skill-tag">HPC</span>
-</div>
 
 ## Experience
 
@@ -37,7 +24,7 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 
 {% endfor %}
 
-## Featured Projects
+<!-- ## Featured Projects
 
 {% assign featured_projects = site.data.projects | where: "featured", true %}
 {% for project in featured_projects %}
@@ -46,7 +33,7 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 
 **Technologies:** {{ project.tech | join: ", " }}
 
-{% endfor %}
+{% endfor %} -->
 
 ## All Projects
 
