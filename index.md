@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Prachi Barache | Data Science Portfolio
+---
+
 <div class="social-buttons">
   <a href="https://github.com/{{ site.social.github }}" class="social-button github">
     <i class="fab fa-github"></i> GitHub
@@ -9,7 +11,6 @@ title: Prachi Barache | Data Science Portfolio
     <i class="fab fa-linkedin"></i> LinkedIn
   </a>
 </div>
----
 
 # Hello, I'm Prachi 👋
 
