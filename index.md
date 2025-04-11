@@ -100,7 +100,6 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 ## Let's Connect!
 
 - Email: {{ site.author.email }}
-- Phone: {{ site.author.phone }}
 - Location: {{ site.author.location }}
 - [GitHub](https://github.com/{{ site.social.github }})
 - [LinkedIn](https://linkedin.com/in/{{ site.social.linkedin }})
