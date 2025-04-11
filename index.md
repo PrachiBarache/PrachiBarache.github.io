@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Prachi Barache | Data Science Portfolio
+---
+
+# Hello, I'm Prachi 👋
+
 <div class="social-buttons">
   <a href="https://github.com/{{ site.social.github }}" class="social-button github">
     <i class="fab fa-github"></i> GitHub
@@ -9,10 +13,6 @@ title: Prachi Barache | Data Science Portfolio
     <i class="fab fa-linkedin"></i> LinkedIn
   </a>
 </div>
-
----
-
-# Hello, I'm Prachi 👋
 
 I'm a Data Science professional passionate about turning complex data into meaningful insights. With a background in neural network optimization and computational efficiency, I love tackling challenging problems and making AI more accessible.
 
