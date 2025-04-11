@@ -79,12 +79,12 @@ h3 {
   font-size: 1em;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(221, 200, 11, 0.911);
 }
 
 .social-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(221, 200, 11, 0.911);
   text-decoration: none;
 }
 
@@ -99,12 +99,12 @@ h3 {
 }
 
 .linkedin {
-  background-color: #0077b5;
+  background-color: #b5b500e7;
   color: white;
 }
 
 .linkedin:hover {
-  background-color: #005d8f;
+  background-color: #b5b500e7;
   color: white;
 }
 
