@@ -42,6 +42,10 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 
 **Technologies:** {{ project.tech | join: ", " }}
 
+{% if project.github_link != "" %}
+[View Project on GitHub]({{ project.github_link }})
+{% endif %}
+
 {% endfor %}
 
 ## Skills
@@ -53,15 +57,17 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 {% endfor %}
 {% endfor %}
 
-## Education
+## Extracurricular Activities
 
-{% for edu in site.data.education %}
-### {{ edu.degree }}
-*{{ edu.institution }}, {{ edu.location }} | {{ edu.period }}*
+{% for activity in site.data.extracurricular %}
+### {{ activity.title }} - {{ activity.role }}
+*{{ activity.period }}*
 
-{{ edu.description }}
+{{ activity.description }}
 
-**Key Courses:** {{ edu.courses | join: ", " }}
+{% for item in activity.highlights %}
+- {{ item }}
+{% endfor %}
 {% endfor %}
 
 ## Contact
