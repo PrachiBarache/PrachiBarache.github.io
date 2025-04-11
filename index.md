@@ -35,6 +35,16 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 
 {% endfor %} -->
 
+## Skills
+
+{% for skill_category in site.data.skills %}
+### {{ skill_category.category }}
+{% for skill in skill_category.items %}
+- {{ skill }}
+{% endfor %}
+{% endfor %}
+
+
 ## All Projects
 
 {% for project in site.data.projects %}
@@ -47,15 +57,6 @@ Passionate about using statistical techniques and advanced analytics to deliver 
 [View Project on GitHub]({{ project.github_link }})
 {% endif %}
 
-{% endfor %}
-
-## Skills
-
-{% for skill_category in site.data.skills %}
-### {{ skill_category.category }}
-{% for skill in skill_category.items %}
-- {{ skill }}
-{% endfor %}
 {% endfor %}
 
 ## Extracurricular Activities
