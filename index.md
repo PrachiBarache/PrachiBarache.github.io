@@ -9,7 +9,7 @@ I'm a Data Science professional passionate about turning complex data into meani
 
 When I'm not coding or analyzing data, you'll find me organizing community events, mentoring aspiring data scientists, and exploring new technologies. I believe in the power of data to drive positive change and enjoy collaborating with others to make that happen.
 
-## Core Competencies
+<!-- ## Core Competencies
 
 <div class="skills-highlight">
   <span class="skill-tag">Python</span>
@@ -21,7 +21,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
   <span class="skill-tag">PyTorch</span>
   <span class="skill-tag">TensorFlow</span>
   <span class="skill-tag">HPC</span>
-</div>
+</div> -->
 
 ## My Journey
 
