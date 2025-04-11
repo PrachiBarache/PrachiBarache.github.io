@@ -10,6 +10,7 @@
   tech: [Python, Transformers, PyTorch, FAISS, Vector Databases]
   featured: true
   image: /assets/images/project-rag.jpg
+  github_link: "https://github.com/PrachiBarache/RAG"
 
 - title: Financial Sentiment Analysis Project
   description: >-
@@ -20,6 +21,7 @@
   tech: [NLP, PyTorch, TensorFlow, Hugging Face, Transformers]
   featured: true
   image: /assets/images/project-sentiment.jpg
+  github_link: "https://github.com/PrachiBarache/nlp-financial-sentiment"
 
 - title: Wine Quality Prediction
   description: >-
@@ -30,6 +32,7 @@
   tech: [Python, pandas, scikit-learn, PyTorch, SMOTE]
   featured: false
   image: /assets/images/project-wine.jpg
+  github_link: "https://github.com/PrachiBarache/Wine-quality"
 
 - title: Online Retail Sales Pattern Analysis
   description: >-
@@ -40,6 +43,7 @@
   tech: [Python, Data Visualization, Pandas, Linear Regression]
   featured: false
   image: /assets/images/project-retail.jpg
+  github_link: "https://github.com/PrachiBarache/Sales_pattern_analysis"
 
 - title: Optimal Navigation in a Zoo Environment
   description: >-
@@ -50,3 +54,37 @@
   tech: [Reinforcement Learning, PyTorch, Python, DQN, PPO]
   featured: true
   image: /assets/images/project-rl.jpg
+  github_link: "https://github.com/PrachiBarache/Zoo__navigation_DRL"
+
+- title: Binary Classification with Backpropagation
+  description: >-
+    Developed binary classification model to predict bank customer deposits using backpropagation 
+    in neural networks. Implemented in Python (PyTorch) and MATLAB, focusing on data preprocessing, 
+    feature engineering, and model optimization. Achieved model accuracy of 80% through gradient 
+    descent optimization and hyperparameter tuning.
+  tech: [Python, PyTorch, MATLAB, Pandas, Scikit-learn, NumPy]
+  featured: false
+  image: /assets/images/project-binary.jpg
+  github_link: "https://github.com/PrachiBarache/Binary-Classification-for-BankData-Matlab-implementaion"
+
+- title: Comparative Churn Analysis
+  description: >-
+    Predicted customer churn using Telco datasets with Logistic Regression and Decision Trees.
+    Achieved 90% accuracy with Decision Trees and 85% accuracy with Logistic Regression.
+    Applied feature selection, hyperparameter tuning, and cross-validation to prevent overfitting.
+    Evaluated models on accuracy, precision, recall, and F1-score.
+  tech: [Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn]
+  featured: false
+  image: /assets/images/project-churn.jpg
+  github_link: "https://github.com/PrachiBarache/Churn_analysis_BankData"
+
+# - title: Derivative-based Regularization (SLoss)
+#   description: >-
+#     Conducted research on novel regularization techniques for neural networks, developing SLoss
+#     (Simplified Derivative Loss) which achieved comparable performance to existing methods while
+#     reducing computational costs by up to 75%. Executed rigorous experimental evaluations across
+#     34 diverse datasets using HPC infrastructure and SLURM for parallelized training and testing.
+#   tech: [Python, PyTorch, Scikit-learn, SLURM, HPC, Statistical Analysis]
+#   featured: true
+#   image: /assets/images/project-sloss.jpg
+#   github_link: ""
