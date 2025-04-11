@@ -1,27 +1,39 @@
-# Education data for portfolio
+# Extracurricular Activities data for portfolio
 
-- degree: MSc Data Science with Merit
-  institution: City, University of London
-  location: London, UK
-  period: September 2023 - February 2025
+- title: Sarathi Women Empowerment Program
+  role: Core Team Member
+  period: May 2019 - July 2019
   description: >-
-    Focused on advanced topics in data science and machine learning.
-  courses:
-    - Machine Learning
-    - Neural Computing
-    - Deep Reinforcement Learning
-    - Visual Analytics
-    - Natural Language Processing
-    - Big Data
+    Led skill development initiative for 45 rural women, managing a 6-person team and securing TATA 
+    Technologies funding of Rs.35000. Coordinated exhibition logistics and implemented outreach programs.
+  highlights:
+    - Managed a team of 6 volunteers
+    - Secured external funding from TATA Technologies
+    - Organized skills training workshops
+    - Coordinated exhibition for showcasing participant work
 
-- degree: B.Tech. Electronics and Telecommunication
-  institution: MIT Academy of Engineering
-  location: India
-  period: June 2015 - July 2020
+- title: U25 [India's Biggest Youth Community]
+  role: U25 Campus Ambassador
+  period: June 2019 - June 2020
   description: >-
-    CGPA: 6.78/10
-  courses:
-    - Machine Learning
-    - Product Design
-    - Entrepreneurship
-    - Internet of Things
+    Established U25 club on campus and organized successful U25 Summit (500 footprint) from 
+    conceptualization to execution. Secured approvals from administration and successfully 
+    brought sponsors onboard for campus events.
+  highlights:
+    - Founded and led campus chapter of U25
+    - Organized summit with 500+ attendees
+    - Secured sponsorships for campus events
+    - Managed event logistics and marketing
+
+- title: City University of London
+  role: Student Trustee & Ambassador
+  period: December 2023 - December 2024
+  description: >-
+    Represented student interests in university governance meetings and served as university 
+    representative at official events. Provided student perspective on policy decisions and 
+    participated in outreach activities.
+  highlights:
+    - Participated in governance meetings
+    - Represented university at official events
+    - Provided feedback on student policies
+    - Assisted with student outreach programs
