@@ -3,9 +3,9 @@
 # Site settings
 title: Prachi Barache
 description: >-
-- [GitHub](https://github.com/{{ site.social.github }}) |[LinkedIn](https://linkedin.com/in/{{ site.social.linkedin }})
-
   Python | Machine Learning | Neural Networks | Data Analysis | NLP | Deep Reinforcement Learning | HPC
+  - [GitHub](https://github.com/{{ site.social.github }}) |[LinkedIn](https://linkedin.com/in/{{ site.social.linkedin }})
+
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
