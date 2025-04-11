@@ -81,7 +81,6 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 {% endfor %}
 
 ## What I Do Outside Work
-
 {% for activity in site.data.extracurricular %}
 <div class="activity-card">
   <h3>{{ activity.title }}</h3>
