@@ -3,10 +3,8 @@
 # Site settings
 title: Prachi Barache | Data Science Portfolio
 description: >-
-  Data Science professional with expertise in machine learning, neural networks, and 
-  computational efficiency. Skilled in analyzing large datasets to extract actionable insights
-  for business decision-making.
   
+
   Python | Machine Learning | Neural Networks | Data Analysis | NLP | Deep Reinforcement Learning | HPC
 
 baseurl: "" # the subpath of your site, e.g. /blog
