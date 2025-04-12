@@ -134,7 +134,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 {% for skill in skill_category.items %}
 - {{ skill }}
 {% endfor %}
-{% endfor %}
+{% endfor %}-->
 
 ## What I Do Outside Work
 {% for activity in site.data.extracurricular %}
@@ -151,7 +151,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
     {% endfor %}
   </div>
 </div>
-{% endfor %} -->
+{% endfor %} 
 
 ## Let's Connect!
 
