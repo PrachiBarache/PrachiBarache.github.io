@@ -2,11 +2,11 @@
 
 - title: SimpleRAG - Lightweight Retrieval-Augmented Generation System
   description: >-
-    - Architected a modular RAG system solution designed for enterprise-scale information retrieval applications
-    - Implemented vector embeddings optimized for both performance and computational efficiency, reducing processing overhead while maintaining high accuracy
-    - Designed system architecture with scalability in mind, allowing for seamless integration with existing enterprise infrastructure
-    - Created custom text chunking strategies and context window management optimized for business document processing use cases
-    - Balanced technical requirements with usability considerations to deliver a solution that addresses real-world business needs
+     Architected a modular RAG system solution designed for enterprise-scale information retrieval applications.
+     Implemented vector embeddings optimized for both performance and computational efficiency, reducing processing overhead while maintaining high accuracy.
+     Designed system architecture with scalability in mind, allowing for seamless integration with existing enterprise infrastructure
+     Created custom text chunking strategies and context window management optimized for business document processing use cases.
+     Balanced technical requirements with usability considerations to deliver a solution that addresses real-world business needs.
   tech: [Python, Transformers, PyTorch, FAISS, Vector Databases]
   featured: true
   image: /assets/images/project-rag.jpg
