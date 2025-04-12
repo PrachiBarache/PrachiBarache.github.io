@@ -51,7 +51,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 {% assign featured_projects = site.data.projects | where: "featured", true %}
 {% for project in featured_projects %}
 <div class="project-card">
-  <h3>{{ project.title }}</h3>
+  <h4>{{ project.title }}</h4>
   <p>{{ project.description }}</p>
 
   <div class="project-tech">
