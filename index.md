@@ -32,7 +32,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
   <span class="skill-tag">HPC</span>
 </div> -->
 
-## My Journey
+<!-- ## My Journey -->
 <!-- I stared to learn coding during my summer vaccations after finishing up my high school(i.e. 10th standard) just to pass the time. The first coding language I learned was C and like everyone I said "Hello" to the coding world withput knowing that I am gone do this for rest of my life. I loved what I was doing, I created tik-tak-to game and what not. But I got introduced with electronics in my junior college and I was amazed to see how "AND OR NOT" makes things work, and all this ended up in me prceiving "Electronics and Telecomunication engineering". Where I learned not only electrinics i.e.  -->
 <!-- {% for job in site.data.experience %} -->
 <!-- ### {{ job.position }} | {{ job.company }}
