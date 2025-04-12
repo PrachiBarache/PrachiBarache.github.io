@@ -86,7 +86,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 </div>
 {% endfor %}
 
-## All Projects
+<!-- ## All Projects
 
 {% for project in site.data.projects %}
 ### {{ project.title }}
@@ -98,7 +98,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 [View Project on GitHub]({{ project.github_link }})
 {% endif %}
 
-{% endfor %}
+{% endfor %} -->
 
 ## Skills
 
