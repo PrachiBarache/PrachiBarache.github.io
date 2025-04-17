@@ -3,6 +3,18 @@ layout: default
 title: Prachi Barache | Data Science Portfolio
 ---
 
+---
+
+[Home](/) |
+[Projects](/projects) |
+[Experience](/experience) |
+[Skills](/skills) |
+[Leadership](/extracurricular) |
+[Contact](/contact)
+
+---
+
+
 <!-- <div class="social-buttons">
   <a href="https://github.com/{{ site.social.github }}" class="social-button github">
     <i class="fab fa-github"></i> GitHub
