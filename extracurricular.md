@@ -1,0 +1,22 @@
+---
+layout: default
+title: Leadership & Volunteering
+---
+
+# What I Do Outside Work
+
+{% for activity in site.data.extracurricular %}
+## {{ activity.title }} ({{ activity.period }})
+**Role:** {{ activity.role }}
+
+{{ activity.description }}
+
+**Highlights:**
+<ul>
+  {% for item in activity.highlights %}
+    <li>{{ item }}</li>
+  {% endfor %}
+</ul>
+
+---
+{% endfor %}
