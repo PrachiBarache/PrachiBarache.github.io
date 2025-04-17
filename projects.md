@@ -2,6 +2,12 @@
 layout: default
 title: Projects
 ---
+---
+[Experience](/experience) |
+[Skills](/skills) |
+[Leadership](/extracurricular) |
+[Contact](/contact)
+---
 
 # Projects
 
