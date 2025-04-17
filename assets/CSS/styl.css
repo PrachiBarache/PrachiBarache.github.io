@@ -1,0 +1,510 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Color variables */
+:root {
+  --primary-color: #4a6fa5;
+  --secondary-color: #047857;
+  --light-color: #f8fafc;
+  --dark-color: #1e293b;
+  --accent-color: #7c3aed;
+  --warm-bg: #fcf9f4;
+  --card-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-color);
+  line-height: 1.6;
+  background-color: var(--warm-bg);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: none;
+  padding-bottom: 0.3em;
+  color: var(--dark-color);
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 2px solid rgba(124, 58, 237, 0.2);
+  padding-bottom: 0.5em;
+  margin-top: 1.2em; /* Reduced from 2em */
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-top: 1em; /* Reduced from default */
+}
+
+/* Social buttons in header */
+.social-buttons {
+  display: flex;
+  gap: 1em;
+  margin: 1.5em 0;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.6em 1.5em;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(221, 200, 11, 0.911);
+}
+
+.social-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(221, 200, 11, 0.911);
+  text-decoration: none;
+}
+
+.github {
+  background-color: #b5b500e7;
+  color: white;
+}
+
+.github:hover {
+  background-color: #b5b500e7;
+  color: white;
+}
+
+.linkedin {
+  background-color: #b5b500e7;
+  color: white;
+}
+
+.linkedin:hover {
+  background-color: #b5b500e7;
+  color: white;
+}
+
+/* Skills highlight section */
+.skills-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin: 1.8em 0;
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  border-radius: 20px;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--accent-color);
+}
+
+/* Skills section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.skill-category {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 1.5em;
+  background-color: white;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid rgba(124, 58, 237, 0.2);
+  font-size: 1.3em;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.skill-category li {
+  padding: 0.4em 0;
+  display: flex;
+  align-items: center;
+}
+
+.skill-category li:before {
+  content: "•";
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+/* Experience cards */
+.experience-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.8em;
+  margin-bottom: 2em;
+  box-shadow: var(--card-shadow);
+  border-left: 4px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+  margin-bottom: 1em;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.4em;
+  color: var(--primary-color);
+}
+
+.experience-period {
+  display: inline-block;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.3em;
+}
+
+.experience-highlights {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.experience-highlights li {
+  padding: 0.5em 0;
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.experience-highlights li:before {
+  content: "→";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+}
+
+/* Project cards */
+.project-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.8em;
+  margin-bottom: 2em;
+  box-shadow: var(--card-shadow);
+  border-left: 4px solid var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+.project-tech {
+  margin: 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: rgba(74, 111, 165, 0.1);
+  color: var(--primary-color);
+  padding: 0.3em 0.8em;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 1em;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.6em 1.2em;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* Activity cards */
+.activity-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.8em;
+  margin-bottom: 2em;
+  box-shadow: var(--card-shadow);
+  border-left: 4px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.activity-card h3 {
+  margin-top: 0;
+  color: var(--accent-color);
+}
+
+.activity-card h4 {
+  margin-top: 0.5em;
+  font-size: 1.1em;
+  color: var(--primary-color);
+}
+
+.activity-period {
+  display: block;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.activity-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em;
+  margin-top: 1.2em;
+}
+
+.activity-highlight {
+  background-color: rgba(124, 58, 237, 0.1);
+  color: var(--accent-color);
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+/* Contact section */
+.contact-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2em;
+  margin-top: 2em;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.social-links {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--accent-color);
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Font Awesome icons (add a link to Font Awesome in your _config.yml) */
+.fab, .fas {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  .skills-container, 
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-links {
+    flex-direction: column;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 12pt;
+    color: #000;
+    background-color: #fff;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .experience-card, 
+  .project-card, 
+  .skill-category, 
+  .activity-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Contact section */
+.contact-info {
+  margin-top: 2em;
+  padding: 1.5em;
+  background-color: var(--light-color);
+  border-radius: 8px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  
+  .skills-container {
+    flex-direction: column;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .project-card, .skill-category {
+    break-inside: avoid;
+  }
+}

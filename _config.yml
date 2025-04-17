@@ -1,0 +1,38 @@
+# Main configuration file for GitHub Pages portfolio
+
+# Site settings
+title: Prachi Barache
+description: >-
+  Python | Machine Learning | Neural Networks | Data Analysis | NLP | Deep Reinforcement Learning | HPC
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+  
+# Build settings
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+
+# Author information
+author:
+  name: Prachi Barache
+  email: psbarache@gmail.com
+  location: London, UK
+
+# Social media
+social:
+  github: PrachiBarache
+  linkedin: psbarache
+
+# Theme customization
+colors:
+  primary: "#4a6fa5"
+  secondary: "#047857"
+  light: "#f8fafc"
+  dark: "#1e293b"
+  accent: "#7c3aed"
+
+# Additional scripts
+head_scripts:
+  - https://kit.fontawesome.com/6b3f976798.js
