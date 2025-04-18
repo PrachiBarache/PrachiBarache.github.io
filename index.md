@@ -63,12 +63,14 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 ###  MSc Dissertation + Research Internship  
 **Experimentation with Derivative-Based Regularization Method for Regression using Neural Networks**
 
-  Conducted research on novel regularization techniques for neural networks, developing SLoss
-  (Simplified Derivative Loss), which achieved comparable performance to existing methods while
-  reducing computational costs by up to 75%.
-  Executed rigorous experimental evaluations across 34 diverse datasets using HPC infrastructure
-  and SLURM for parallelized training and testing.
-  Built a PyTorch-based, YAML-driven experimentation pipeline focused on reproducibility.
+  Proposed and implemented SLoss, a simplified derivative-based regularization technique for regression tasks in neural networks.
+  Achieved up to 75% reduction in compute time compared to the more complex DLoss method — with no compromise on model generalization.
+  Conducted over 17,000 experiments across 34 synthetic and real-world datasets using SLURM-managed high-performance computing (HPC).
+  Built a fully modular experimentation pipeline in PyTorch with YAML configuration, reproducibility, and automated performance tracking.
+  Benchmarked SLoss against baseline regularization methods (Dropout, L2, DLoss) on MSE, training variance, and execution time.
+  Demonstrated SLoss as a practical alternative for low-resource environments without sacrificing learning performance.
+  Completed as part of MSc in Data Science and a Research Internship at City, University of London.
+
 
 *Tech used:* Python, PyTorch, Scikit-learn, SLURM, HPC, Statistical Analysis
 
