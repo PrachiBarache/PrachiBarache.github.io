@@ -2,6 +2,16 @@
 layout: default
 title: Contact
 ---
+---
+
+[Home](/) |
+[Projects](/projects) |
+[Experience](/experience) |
+[Skills](/skills) |
+[Leadership](/extracurricular) |
+[Contact](/contact)
+
+---
 
 # Let's Connect
 

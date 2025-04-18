@@ -3,11 +3,16 @@ layout: default
 title: Experience
 ---
 ---
+
+[Home](/) |
 [Projects](/projects) |
+[Experience](/experience) |
 [Skills](/skills) |
 [Leadership](/extracurricular) |
 [Contact](/contact)
+
 ---
+
 
 # Work Experience
 

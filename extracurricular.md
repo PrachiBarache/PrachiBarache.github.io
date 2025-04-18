@@ -3,12 +3,16 @@ layout: default
 title: Leadership & Volunteering
 ---
 ---
+
+[Home](/) |
 [Projects](/projects) |
 [Experience](/experience) |
 [Skills](/skills) |
+[Leadership](/extracurricular) |
 [Contact](/contact)
 
 ---
+
 # What I Do Outside Work
 
 {% for activity in site.data.extracurricular %}

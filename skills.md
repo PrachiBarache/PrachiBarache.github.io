@@ -3,10 +3,14 @@ layout: default
 title: Skills
 ---
 ---
+
+[Home](/) |
 [Projects](/projects) |
 [Experience](/experience) |
+[Skills](/skills) |
 [Leadership](/extracurricular) |
 [Contact](/contact)
+
 ---
 
 # Technical Skills
