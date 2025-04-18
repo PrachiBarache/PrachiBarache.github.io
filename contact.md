@@ -17,5 +17,5 @@ title: Contact
 
 - 📧 Email: [{{ site.author.email }}](mailto:{{ site.author.email }})
 - 🌍 Location: {{ site.author.location }}
-- 🧠 GitHub: [{{ site.social.github }}](https://github.com/{{ site.social.github }})
+- 👩🏻‍💻 GitHub: [{{ site.social.github }}](https://github.com/{{ site.social.github }})
 - 💼 LinkedIn: [{{ site.social.linkedin }}](https://linkedin.com/in/{{ site.social.linkedin }})
