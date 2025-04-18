@@ -78,7 +78,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 </div>
 {% endfor %}
 
-## More Projects
+<!-- ## More Projects
 
 {% assign other_projects = site.data.projects | where: "featured", false %}
 {% for project in other_projects %}
@@ -96,7 +96,7 @@ When I'm not coding or analyzing data, you'll find me organizing community event
   <a href="{{ project.github_link }}" class="project-link">View on GitHub</a>
   {% endif %}
 </div>
-{% endfor %}
+{% endfor %} -->
 
 <!-- ## All Projects
 
