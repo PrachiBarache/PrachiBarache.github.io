@@ -60,6 +60,19 @@ When I'm not coding or analyzing data, you'll find me organizing community event
 
 ## Projects I'm Proud Of
 
+### 🧪 MSc Dissertation + Research Internship  
+**Experimentation with Derivative-Based Regularization Method for Regression using Neural Networks**
+
+- Conducted research on novel regularization techniques for neural networks, developing SLoss
+  (Simplified Derivative Loss), which achieved comparable performance to existing methods while
+  reducing computational costs by up to 75%.
+- Executed rigorous experimental evaluations across 34 diverse datasets using HPC infrastructure
+  and SLURM for parallelized training and testing.
+- Built a PyTorch-based, YAML-driven experimentation pipeline focused on reproducibility.
+
+*Tech used:* Python, PyTorch, Scikit-learn, SLURM, HPC, Statistical Analysis
+
+
 {% assign featured_projects = site.data.projects | where: "featured", true %}
 {% for project in featured_projects %}
 <div class="project-card">
