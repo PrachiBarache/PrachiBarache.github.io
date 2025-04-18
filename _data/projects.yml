@@ -1,4 +1,13 @@
-# Project data for portfolio
+
+- title: "Dissertation: Experimentation with Derivative-Based Regularization Method for Regression using Neural Networks"
+  description: >-
+    Conducted research on novel regularization techniques for neural networks, developing SLoss
+    (Simplified Derivative Loss) which achieved comparable performance to existing methods while
+    reducing computational costs by up to 75%. Executed rigorous experimental evaluations across
+    34 diverse datasets using HPC infrastructure and SLURM for parallelized training and testing.
+  tech: [Python, PyTorch, Scikit-learn, SLURM, HPC, Statistical Analysis]
+  featured: true
+  image: /assets/images/project-sloss.jpg
 
 - title: SimpleRAG - Lightweight Retrieval-Augmented Generation System
   description: >-
@@ -78,13 +87,3 @@
   image: /assets/images/project-churn.jpg
   github_link: "https://github.com/PrachiBarache/Churn_analysis_BankData"
 
-# - title: Derivative-based Regularization (SLoss)
-#   description: >-
-#     Conducted research on novel regularization techniques for neural networks, developing SLoss
-#     (Simplified Derivative Loss) which achieved comparable performance to existing methods while
-#     reducing computational costs by up to 75%. Executed rigorous experimental evaluations across
-#     34 diverse datasets using HPC infrastructure and SLURM for parallelized training and testing.
-#   tech: [Python, PyTorch, Scikit-learn, SLURM, HPC, Statistical Analysis]
-#   featured: true
-#   image: /assets/images/project-sloss.jpg
-#   github_link: ""
